@@ -1,0 +1,29 @@
+{
+  "name": "express-detective",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lindekaer/express-detective.git"
+  },
+  "author": "Theodor C. Listov Lindekaer <theodor.lindekaer@gmail.com> (https://lindekaer.github.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lindekaer/express-detective/issues"
+  },
+  "homepage": "https://github.com/lindekaer/express-detective#readme",
+  "dependencies": {
+    "body-parser": "1.17.1",
+    "colors": "1.1.2",
+    "express": "4.15.2",
+    "moment": "2.18.1",
+    "prettyjson": "1.2.1"
+  },
+  "devDependencies": {
+    "standard": "9.0.2"
+  }
+}
