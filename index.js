@@ -23,7 +23,7 @@ function expressDetective (userOptions = {}) {
   const options = {
     timeFormat: 'MMMM Do, hh:mm:ss',
     jsonColorOptions: { keysColor: 'cyan', numberColor: 'yellow', dashColor: 'magenta' },
-    includeHeaders: true,
+    includeHeaders: false,
     includeBody: true,
     includeQueryString: true
   }
@@ -31,7 +31,14 @@ function expressDetective (userOptions = {}) {
   // Check if user has provided illegal options
   for (const option of Object.keys(userOptions)) {
     if (options[option] === undefined) throw Error(`The option '${option}' is not allowed`)
-    // check if other are of correct type
+    const value = userOptions[option]
+    if (option === 'timeFormat' && typeof value !== 'string') throw new Error(`'timeFormat' must be a string`)
+    if (option === 'jsonColorOptions' && typeof value !== 'object') throw new Error(`'jsonColorOptions' must be an object`)
+    if (option === 'includeHeaders' && typeof value !== 'boolean') throw new Error(`'includeHeaders' must be a boolean`)
+    if (option === 'includeBody' && typeof value !== 'boolean') throw new Error(`'includeBody' must be a boolean`)
+    if (option === 'includeQueryString' && typeof value !== 'boolean') throw new Error(`'includeQueryString' must be a boolean`)
+    // Override default options with user options
+    options[option] = userOptions[option]
   }
 
   // Return valid Express middleware
