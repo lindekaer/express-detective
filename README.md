@@ -23,6 +23,14 @@ app.listen(8000)
 ## Configuration
 You can pass an options object to `express-detective` when mounting the middleware.
 
+```js
+const options = {
+  // Configuration...
+}
+
+app.use(detective(options))
+```
+
 | Key           | Type          | Description  |
 | :------------- |:-------------| :-------------|
 | `timeFormat`         | string      | The time format used for output. Uses formats from `moment` |
