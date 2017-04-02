@@ -21,7 +21,7 @@ const prettyjson = require('prettyjson')
 function expressDetective (userOptions = {}) {
   // Default options
   const options = {
-    timeFormat: 'MMMM Do, hh:mm:ss',
+    timeFormat: 'MMMM Do, hh:mm:ss A',
     jsonColorOptions: { keysColor: 'cyan', numberColor: 'yellow', dashColor: 'magenta' },
     includeHeaders: false,
     includeBody: true,
