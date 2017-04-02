@@ -24,7 +24,7 @@ app.listen(8000)
 You can pass an options object to `express-detective` when mounting the middleware.
 
 | Key           | Type          | Description  |
-| ------------- |:-------------:| -------------:|
+| :------------- |:-------------| :-------------|
 | timeFormat         | string      | The time format used for output. Uses formats from `moment` |
 | jsonColorOptions   | object      | The coloring of the JSON output. Uses options from `prettyjson` |
 | includeHeaders     | boolean     | Whether to print headers of request |
