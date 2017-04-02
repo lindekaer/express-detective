@@ -7,7 +7,7 @@ npm install --save express-detective
 ```
 
 ## Usage
-```
+```js
 const express = require('express')
 const detective = require('express-detective')
 const app = express()

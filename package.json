@@ -1,6 +1,6 @@
 {
   "name": "express-detective",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple Express middleware to pretty print the details of incoming requests",
   "main": "index.js",
   "repository": {
