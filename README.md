@@ -43,7 +43,7 @@ The default values are:
 
 | Key           | Default value | 
 | :-------------|:--------------| 
-| `timeFormat`         | MMMM Do, hh:mm:ss A
+| `timeFormat`         | 'MMMM Do, hh:mm:ss A'
 | `jsonColorOptions`   | { keysColor: 'cyan', numberColor: 'yellow', dashColor: 'magenta' }
 | `includeHeaders`     | false     
 | `includeBody`        | true     
