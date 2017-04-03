@@ -39,5 +39,15 @@ app.use(detective(options))
 | `includeBody`        | boolean     | Whether to print body of request, if POST |
 | `includeQueryString` | boolean     | Whether to print query string of request, if GET |
 
+The default values are:
+
+| Key           | Default value          | 
+| :------------- |:-------------| 
+| `timeFormat`         | `MMMM Do, hh:mm:ss A`      
+| `jsonColorOptions`   | `{ keysColor: 'cyan', numberColor: 'yellow', dashColor: 'magenta' }`      
+| `includeHeaders`     | `false`     
+| `includeBody`        | `true`     
+| `includeQueryString` | `true`     
+
 ## License
 MIT © [Theodor Lindekaer](http://lindekaer.com)
