@@ -62,10 +62,15 @@ function expressDetective (userOptions = {}) {
       })
     }
 
-    if (options.includeBody && method === 'POST' && Object.keys(body).length !== 0) {
+    if (options.includeBody && method === 'POST' && body !== undefined && Object.keys(body).length !== 0) {
       data.push({
         title: 'BODY',
         content: prettyjson.render(body, options.jsonColorOptions)
+      })
+    } else if (options.includeBody && method === 'POST' && body === undefined) {
+      data.push({
+        title: 'BODY',
+        content: 'None'
       })
     }
 
