@@ -70,7 +70,7 @@ function expressDetective (userOptions = {}) {
     } else if (options.includeBody && method === 'POST' && body === undefined) {
       data.push({
         title: 'BODY',
-        content: 'None'
+        content: 'Undefined'
       })
     }
 
